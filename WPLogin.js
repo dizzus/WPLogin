@@ -18,20 +18,6 @@ function parse_cookies(arr) {
     return result;
 }
 
-function print_dict(dict, header) {
-    console.log(header);
-    for(var k in dict) {
-        console.log( '[' + k + '] -> [' + dict[k] + ']');
-    }
-}
-
-function print_arr(arr, header) {
-    console.log(header);
-    for(var i = 0; i < arr.length; ++i) {
-        console.log('[' + i + '] -> [' + arr[i] + ']');
-    }
-}
-
 function find_logged_in_cookie(cookies) {
     for(var k in cookies) {
         if( k.startsWith('wordpress_logged_in_') ) {
